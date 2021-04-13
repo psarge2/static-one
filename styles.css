@@ -1,0 +1,26 @@
+.navbar {
+	background: red;
+	height: 80px;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+.navbar__container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.navbar__nav-link {
+	display: inline;
+}
+
+.navbar__nav-link a {
+	text-align: center;
+	text-decoration: none;
+	padding: 10px;
+	color: #fff;
+}
+.navbar__nav-link a:hover {
+	color: rgb(214, 214, 214);
+}
