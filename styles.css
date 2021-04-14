@@ -107,4 +107,131 @@ ul {
 	width: 100%;
 }
 
-/* About Section */
+/* Podcast Section */
+
+/* Contact Us Section */
+
+.contact {
+	background: linear-gradient(to right, #ea1d6f 0%, #eb466b 100%);
+	display: flex;
+	min-height: 100vh;
+	font-size: 12px;
+}
+
+button,
+input {
+	font-weight: 700;
+	letter-spacing: 1.4px;
+}
+
+.contact__container {
+	flex: 0 1 800px;
+	margin: auto;
+	padding: 10px;
+}
+
+.contact__screen {
+	position: relative;
+	background: #3e3e3e;
+	border-radius: 15px;
+}
+
+.contact__screen:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 20px;
+	right: 20px;
+	bottom: 0;
+	border-radius: 15px;
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+	z-index: -1;
+}
+
+.contact__screen-body {
+	display: flex;
+}
+
+.contact__screen-body-item {
+	flex: 1;
+	padding: 50px;
+}
+
+.contact__screen-body-item.left {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact__form-title {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	color: #ea1d6f;
+	font-size: 3rem;
+	font-family: 700;
+}
+
+.contact__form-title:after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	width: 25px;
+	height: 4px;
+	background: #ea1d6f;
+}
+
+.contact__form-contact {
+	margin-top: auto;
+	font-size: 8px;
+	color: #888;
+}
+
+.contact__form-group {
+	margin-bottom: 15px;
+}
+
+.contact__form-group.message {
+	margin-top: 40px;
+}
+
+.contact__form-group.buttons {
+	margin-bottom: 0;
+	text-align: right;
+}
+
+.contact__form-control {
+	width: 100%;
+	padding: 10px 0;
+	background: none;
+	border: none;
+	border-bottom: 1px solid #666;
+	color: #ddd;
+	font-size: 14px;
+	text-transform: uppercase;
+	outline: none;
+	transition: border-color 0.2s;
+}
+
+.contact__form-control::placeholder {
+	color: #666;
+}
+
+.contact__form-control:focus {
+	border-bottom-color: #ddd;
+}
+
+.contact__form-button {
+	background: none;
+	border: none;
+	color: #ea1d6f;
+	font-size: 14px;
+	cursor: pointer;
+	outline: none;
+}
+
+.contact__form-button:hover {
+	color: #b9134f;
+}
