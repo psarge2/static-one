@@ -109,12 +109,12 @@ ul {
 
 /* Podcast Section */
 
-/* Contact Us Section */
+/*---CONTACT US SECTION---*/
 
 .contact {
 	background: linear-gradient(to right, #ea1d6f 0%, #eb466b 100%);
 	display: flex;
-	min-height: 100vh;
+	min-height: 50vh;
 	font-size: 12px;
 }
 
@@ -184,6 +184,7 @@ input {
 }
 
 .contact__form-contact {
+	font-weight: bold;
 	margin-top: auto;
 	font-size: 8px;
 	color: #888;
