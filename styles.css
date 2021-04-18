@@ -429,3 +429,26 @@ input {
 		letter-spacing: 1.4px;
 	}
 }
+
+@media (max-width: 768px) {
+	.contact__container {
+		margin: auto;
+		padding: 50px;
+	}
+
+	.contact__screen {
+		width: 80%;
+		overflow: hidden;
+	}
+
+	.contact__screen-body {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	.contact__form-contact {
+		margin-top: 20px;
+		font-size: 10px;
+		letter-spacing: 1.4px;
+	}
+}
