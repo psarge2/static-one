@@ -171,11 +171,12 @@ ul {
 	border-radius: 15px;
 }
 
-@media screen and (max-width: 600px) {
+/*@media screen and (max-width: 600px) {
 	body {
 		background: red;
 	}
-}
+}*/
+
 @media (max-width: 900px) {
 	.about {
 		display: flex;
@@ -185,13 +186,21 @@ ul {
 
 	.about h2 {
 		font-size: 2rem;
-		text-align: justify;
 	}
 	.about__column-left,
 	.about__column-right {
 		width: 80%;
 		margin-left: 50px;
 		margin-right: 50px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.about h2 {
+		font-size: 1.7rem;
+	}
+	.about h5 {
+		font-size: 1.3rem;
 	}
 }
 
