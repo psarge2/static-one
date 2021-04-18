@@ -437,8 +437,7 @@ input {
 	}
 
 	.contact__screen {
-		width: 80%;
-		overflow: hidden;
+		width: 90%;
 	}
 
 	.contact__screen-body {
