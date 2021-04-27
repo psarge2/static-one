@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+  <h1 id="title">What do you like?</h1>
+  <p id="description">An Informational survey for all. Don't worry we will judge your answers!</p>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name <input id="name" type="text" name="name" class="form-control"
+          placeholder="Jon Smith" required></label>
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email <input id="email" type="email" name="email" class="form-control"
+          placeholder="name@gmail.com" required></label>
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="age">Age<input type="number" id="number" name="number" pattern="[0-9]*" min="10"
+          max="100" inputmode="numeric" placeholder="23" class="form-control" /></label>
+
+    </div>
+    <div class="form-group">
+      <label for="gender" class="label">
+        <span>Gender</span>
+      </label>
+      <label><input type="radio" id="male" name="gender" value="male"> Male</label>
+      <label><input type="radio" id="female" name="gender" value="female" for="female"> Female</label>
+      <label for="other"><input type="radio" id="other" name="gender" value="other"> Other</label>
+    </div>
+    <p>Tell Us A Little About Yourself</p>
+    <div class="form-group">
+      <label for="mealLoc" class="label">
+        <span>Would You Rather:</span>
+      </label>
+      <label for="cook"><input type="radio" id="cook" name="mealLoc" value="cook"> Cook</label>
+      <label for="eatOut"><input type="radio" id="eat-out" name="mealLoc" value="eat-out"> Eat Out</label>
+    </div>
+    <div class="form-group">
+      <label for="vacation" class="label">
+        <span>Preferred Vacation:</span>
+      </label>
+      <select id="dropdown" name="vacation" class="form-control">
+        <option value="empty">--</option>
+        <option value="cabin">Cabin In The Woods</option>
+        <option value="beach">Villa On The Beach</option>
+        <option value="city">Penthouse In The City</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="phone" class="label">
+        <span>Preferred Phone Brand</span>
+      </label>
+      <div>
+        <input type="checkbox" id="apple" name="phone_apple" value="apple">
+        <label for="apple">Apple</label>
+      </div>
+      <div>
+        <input type="checkbox" id="google" name="phone_google" value="google">
+        <label for="google">Google</label>
+      </div>
+      <div>
+        <input type="checkbox" id="motorola" name="phone_motorola" value="motorola">
+        <label for="motorola">Motorola</label>
+      </div>
+      <div>
+        <input type="checkbox" id="nokia" name="phone_nokia" value="nokia">
+        <label for="nokia">Nokia</label>
+      </div>
+      <div>
+        <input type="checkbox" id="samsung" name="phone_samsung" value="samsung">
+        <label for="samsung">Samsung</label>
+      </div>
+      <div>
+        <input type="checkbox" id="tracfone" name="phone_tracfone" value="tracfone">
+        <label for="tracfone">Tracfone</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <p><label for="more-info">Anything Else You Would Like To Share</label></p>
+      <textarea id="more-info" name="more_info" rows="6" cols="50" class="input-textarea"
+        placeholder="Tell us something good..."></textarea>
+    </div>
+    <div clases="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</body>
+
+
+</html>
